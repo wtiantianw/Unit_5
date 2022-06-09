@@ -29,7 +29,30 @@ class MyApp extends StatelessWidget {
           ],
         ),
         drawer: MyDrawer(),
-        
+        bottomNavigationBar: BottomAppBar(
+          //底部导航栏
+          color: Colors.white,
+          shape: const CircularNotchedRectangle(),
+          child: Row(
+            children: <Widget>[
+              //底部导航栏按钮
+              IconButton(
+                  icon: const Icon(Icons.home),
+                  onPressed: () {
+                  }),
+              IconButton(
+                  icon: const Icon(Icons.business),
+                  onPressed: () {
+                  }),
+              IconButton(
+                  icon: const Icon(Icons.schedule),
+                  onPressed: () {
+                  }),
+            ],
+            mainAxisAlignment: MainAxisAlignment.spaceAround, //均分底部导航栏横向空间
+          ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
             //悬浮按钮
             child: Icon(Icons.add),
@@ -40,7 +63,6 @@ class MyApp extends StatelessWidget {
   }
 
   void _onAdd() {}
-  
 }
 
 class MyHome extends StatelessWidget {
@@ -309,3 +331,5 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
+
+
