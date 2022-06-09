@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('容器类组件'),
+          title: Text('第五章 容器类组件'),
           elevation: 30.0, //设置标题阴影 不需要的话值设置成 0.0
           actions: <Widget>[
             //导航栏右侧菜单
